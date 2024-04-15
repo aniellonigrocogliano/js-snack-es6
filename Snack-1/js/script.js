@@ -1,4 +1,4 @@
-biciclette = [
+const biciclette = [
     {
         nome: "Mountain Bike",
         peso: 12

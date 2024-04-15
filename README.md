@@ -19,10 +19,13 @@ Usiamo i nuovi metodi degli array foreach o filter.
 Buon lavoro! :muscle:
 
 ## Svolgimento Snack 1
-- [X]Creare array di oggetti con bici 
+- [X] Creare array di oggetti con bici 
 - [x] Verifico quale bici ha il peso minore
 - [x] Stampo a video solo la bici col peso minore
 ## Svolgimento Snack 2
-- [ ]
+- [x] Creo array di oggetti con le squadre impostando punti e falli a 0
+- [x] creo funzione che popola punti e falli con valori random
+- [x] creo nuovo array
+- [x] stampo in console
 ## Svolgimento Snack Bonus
 - [ ]
