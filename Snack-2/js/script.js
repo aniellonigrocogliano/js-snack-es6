@@ -24,7 +24,17 @@ function generaValoriRandom(squadre) {
     for (let i = 0; i < squadre.length; i++) {
         squadre[i].punti = Math.floor(Math.random() * 100); // aggiungo un valore random ai punti
         squadre[i].falli = Math.floor(Math.random() * 100); // aggiungo un valore random ai falli
-    }      
+    }
 }
 generaValoriRandom(squadre);
-console.log(squadre)
+console.log(squadre);
+
+function NuovoArray({ nome, falli }) { // richiamo i valori di nome e falli che andaranno a popolare il nuovo array
+    let newSquadre = []; // inizializzo il nuovo array
+    squadre.forEach((curSquadra) => { // scorro il vecchio array
+        let { nome, falli, } = curSquadra; // ad ogni interazione copio i valori di nome e falli
+        newSquadre.push({ nome, falli }); // inserisco nel nuovo array i valori di nome e falli
+    });
+    console.log(newSquadre,);
+}
+NuovoArray(squadre);
