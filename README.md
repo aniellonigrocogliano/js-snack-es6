@@ -28,4 +28,6 @@ Buon lavoro! :muscle:
 - [x] creo nuovo array
 - [x] stampo in console
 ## Svolgimento Snack Bonus
-- [ ]
+- [x] Creo un array di esempio
+- [x] creo la funzione
+- [x] creo nuovo array dove saranno presenti gli elementi con l'indice del primo array compresi tra a e b
