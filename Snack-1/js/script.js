@@ -40,7 +40,17 @@ biciclette = [
         peso: 8,
     }
 ];
-function name(bici) {
-    
-    
+function CercaBiciMinore(bici) {
+    let pesoFinale=bici[0].peso; // creo variabile di appoggio dove salvare il peso minore e l'inizializzo con il valore della prima bici
+    let biciFinale=bici[0].nome; // creo variabile di appoggio dove salvare il nome della bici col peso minore e l'inizializzo con il valore della prima bici
+    bici.forEach((curBici) => {
+        const {nome, peso,} = curBici; // prelevo nome e peso dall'oggetto
+        if(peso<pesoFinale){ // verifico che il peso della bici della corrente iterazione sia minore della variabile di appoggio se si sostituisco entrambe le variabili di apppogio con il valore corrente
+            pesoFinale=peso;
+            biciFinale=nome;
+        }
+    });   
+    console.log(pesoFinale, biciFinale) // stampo in console
+    document.getElementById("result").innerHTML = `Nome bici: ${biciFinale} - Peso bici: ${pesoFinale} Kg` // stampo a video
 }
+CercaBiciMinore(biciclette); // richiamo funzione
