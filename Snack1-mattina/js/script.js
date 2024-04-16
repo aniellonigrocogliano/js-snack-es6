@@ -9,4 +9,21 @@ const automobili = [
     { marca: "Audi", modello: "A3", alimentazione: "diesel" },
     { marca: "Mercedes-Benz", modello: "EQC", alimentazione: "elettrico" },
     { marca: "Opel", modello: "Corsa", alimentazione: "gpl" }
-  ];
+];
+const benzina = [];
+const diesel = [];
+const altreAlimentazioni = [];
+for (let i = 0; i < automobili.length; i++) {
+    
+    if(automobili[i].alimentazione==="benzina"){
+        benzina.push(automobili[i]);
+    }else if (automobili[i].alimentazione==="diesel"){
+        diesel.push(automobili[i]);
+    }else{
+        altreAlimentazioni.push(automobili[i]);
+    }
+
+}
+console.log(benzina)
+console.log(diesel)
+console.log(altreAlimentazioni)
